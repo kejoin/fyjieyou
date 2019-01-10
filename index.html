@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"  />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>捷忧有害生物防治有限公司</title>
+    <link rel="stylesheet" href="css/jq22.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/orbit-1.2.3.css">
+    <link rel="stylesheet" href="css/jq22.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<script src="js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<script type="text/javascript" >
+	
+</script>
+<div class="red_wine_box">
+    <img src="image/header01.jpg" />
+
+    <div class="navigation_box">
+        <a href="index.html">网站首页</a>
+        <a href="information.html">公司简介</a>
+        <a href="service_project.html" >服务项目</a>
+        <a href="Pest_knowledge.html" >虫害知识</a>
+        <a href="example_project.html" >施工案例</a>
+        <a href="service_project.html" >联系我们</a>
+    </div>
+
+	<!--轮播-->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="image/header01.png" alt="第一张">
+				<div class="carousel-caption">
+					1
+				</div>
+			</div>
+			<div class="item">
+				<img src="image/header01.png" alt="第2张">
+				<div class="carousel-caption">
+					2
+				</div>
+			</div>
+			<div class="item">
+				<img src="image/header01.png" alt="第3张">
+				<div class="carousel-caption">
+					3
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+    <!--动态与知识-->
+    <div class="medium_box">
+    	<div class="content_box01">
+			<ul>
+        		<li>防治方案</li>
+            	<li id="ant"   >   <img src="image/unchecked.png ">&nbsp&nbsp蚊类防治方案</li>
+                <li id="mouse" >   <img src="image/unchecked.png ">&nbsp&nbsp蚁类防治方案</li>
+                <li id="chong" >   <img src="image/unchecked.png ">&nbsp&nbsp鼠类防治方案</li>
+                <li id="fly"   >   <img src="image/unchecked.png ">&nbsp&nbsp虫类防治方案</li>
+                <li id="ying"  >   <img src="image/unchecked.png ">&nbsp&nbsp蝇类防治方案</li>
+                <li id="zhang" >   <img src="image/unchecked.png ">&nbsp&nbsp蟑螂防治方案</li>
+            </ul>
+        </div>
+        
+        <div class="content_box02">
+        	<div class="line_one" id="fangzhi">
+            	<ul>
+                	<li><img src="image/1.jpg"><p>蚊类防治方案</p></li>
+                    <li><img src="image/2.jpg"><p>蚁类防治方案</p></li>
+                    <li><img src="image/3.jpg"><p>鼠类防治方案</p></li>
+                    <li><img src="image/5.jpg"><p>虫类防治方案</p></li>
+                    <li><img src="image/7.jpg"><p>蝇类防治方案</p></li>
+                    <li><img src="image/4.jpg"><p>蟑螂防治方案</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript">
+			$("#ant").click(function(){		 
+			  $("#fangzhi").load("fangzhi/antfang.html");
+			});
+			$("#mouse").click(function(){		 
+			  $("#fangzhi").load("fangzhi/mousefang.html");
+			});
+			$("#chong").click(function(){		 
+			  $("#fangzhi").load("fangzhi/flyfang.html");
+			});
+			$("#fly").click(function(){		 
+			  $("#fangzhi").load("fangzhi/flyfang.html");
+			});
+    </script>
+    <!--底部-->
+    <div class="foot">
+<!--        <div class="foot_img">
+            <img src="image/foot_a.png" />
+            <img src="image/foot_b.png" />
+            <img src="image/foot_c.png" />
+            <img src="image/foot_d.png" />
+        </div>-->
+        <p></p>
+        <p>阜阳捷忧有害生物防治有限公司</p>
+        <p>公司地址:合肥市瑶海区安徽职业技术学院信息楼209室 邮编:000000</p>
+        <p>联系电话：151****9842 (传真)00000000 电子邮箱:**********@qq.com 京ICP备14058053号</p>
+    </div>
+
+</div>
+</body>
+</html>
