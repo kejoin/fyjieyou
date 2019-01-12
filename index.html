@@ -84,12 +84,12 @@
     	<div class="content_box01">
 			<ul>
         		<li>防治方案</li>
-            	<li id="ant"   >   <img src="image/unchecked.png ">&nbsp&nbsp蚊类防治方案</li>
-                <li id="mouse" >   <img src="image/unchecked.png ">&nbsp&nbsp蚁类防治方案</li>
-                <li id="chong" >   <img src="image/unchecked.png ">&nbsp&nbsp鼠类防治方案</li>
-                <li id="fly"   >   <img src="image/unchecked.png ">&nbsp&nbsp虫类防治方案</li>
-                <li id="ying"  >   <img src="image/unchecked.png ">&nbsp&nbsp蝇类防治方案</li>
-                <li id="zhang" >   <img src="image/unchecked.png ">&nbsp&nbsp蟑螂防治方案</li>
+            	<li id="wen" >   <img src="image/unchecked.png "><a href="javascript:void(0)">&nbsp&nbsp蚊类防治方案</a></li>
+                <li id="ant" >   <img src="image/unchecked.png "><a href="javascript:void(0)">&nbsp&nbsp蚁类防治方案</a></li>
+                <li id="mouse" > <img src="image/unchecked.png "><a href="javascript:void(0)">&nbsp&nbsp鼠类防治方案</a></li>
+                <li id="chong" > <img src="image/unchecked.png "><a href="javascript:void(0)">&nbsp&nbsp虫类防治方案</a></li>
+                <li id="ying" >  <img src="image/unchecked.png "><a href="javascript:void(0)">&nbsp&nbsp蝇类防治方案</a></li>
+                <li id="zhang" > <img src="image/unchecked.png "><a href="javascript:void(0)">&nbsp&nbsp蟑螂防治方案</a></li>
             </ul>
         </div>
         
@@ -107,17 +107,23 @@
         </div>
     </div>
 	<script type="text/javascript">
+			$("#wen").click(function(){		 
+			  $("#fangzhi").load("fangzhi/mosquito.html");
+			});
 			$("#ant").click(function(){		 
-			  $("#fangzhi").load("fangzhi/antfang.html");
+			  $("#fangzhi").load("fangzhi/ant.html");
 			});
 			$("#mouse").click(function(){		 
-			  $("#fangzhi").load("fangzhi/mousefang.html");
+			  $("#fangzhi").load("fangzhi/mouse.html");
 			});
 			$("#chong").click(function(){		 
-			  $("#fangzhi").load("fangzhi/flyfang.html");
+			  $("#fangzhi").load("fangzhi/worm.html");
 			});
-			$("#fly").click(function(){		 
-			  $("#fangzhi").load("fangzhi/flyfang.html");
+			$("#ying").click(function(){		 
+			  $("#fangzhi").load("fangzhi/fly.html");
+			});
+			$("#zhang").click(function(){		 
+			  $("#fangzhi").load("fangzhi/roach.html");
 			});
     </script>
     <!--底部-->

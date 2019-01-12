@@ -36,7 +36,7 @@
         <a href="index.html">网站首页</a>
         <a href="information.html">公司简介</a>
         <a href="service_project.html" >服务项目</a>
-        <a href="pest_knowledge/Pest_knowledge.html" >虫害知识</a>
+        <a href="Pest_knowledge.html" >虫害知识</a>
         <a href="example_project.html" >施工案例</a>
         <a href="service_project.html" >联系我们</a>
     </div>
@@ -84,39 +84,59 @@
 	</div>
 
     <!--动态与知识-->
-    <div class="medium_box">
-        
-		<div class="content_box02">
+    <div class="medium_box">     
+		<div class="content_box01">
 			<ul class="newslist">
-				<li><span class="biaoti"><a href="ch1/index-1.html">白蚁</a></span></li>
-				<li><span class="biaoti"><a href="ch4/index.html">鼠</a></span></li>
-				<li><span class="biaoti"><a href="ch3/index.html">蟑螂</a></span></li>
-				<li><span class="biaoti"><a href="ch5/index.html">蚊蝇</a></span></li>
-				<li><span class="biaoti"><a href="ch2/index.html">鼠类</a></span></li>
-				<li><span class="biaoti"><a href="ch6/index.html">臭虫</a></span></li>
+				<li><span class="biaoti" id="ant"><a href="javascript:void(0)">白蚁</a></span></li>
+				<li><span class="biaoti" id="mouse"><a href="javascript:void(0)">鼠</a></span></li>
+				<li><span class="biaoti" id="zhang"><a href="javascript:void(0)">蟑螂</a></span></li>
+				<li><span class="biaoti" id="fly"><a href="javascript:void(0)">蚊蝇</a></span></li>
+				<li><span class="biaoti" id="mouse_l"><a href="javascript:void(0)">鼠类</a></span></li>
+				<li><span class="biaoti" id="chong"><a href="javascript:void(0)">臭虫</a></span></li>
 				<li><span class="biaoti"><a href="call.html">蜱螨</a></span></li>
+				<!--
 				<li><span class="biaoti"><a href="call.html">虱子</a></span></li>
 				<li><span class="biaoti"><a href="call.html">园林虫害</a></span></li>
 				<li><span class="biaoti"><a href="call.html">档案害虫</a></span></li>
 				<li><span class="biaoti"><a href="call.html">粮储虫害</a></span></li>
 				<li><span class="biaoti"><a href="call.html">其它有害节肢动物</a></span></li>
+				-->
 			</ul>  
 		</div>
+		<div class="content_box02">
+			<div class="line_one" id="fangzhi">
+            	<ul>
+					<li><img src="image/2.jpg"><p>蚁类</p></li>
+					<li><img src="image/3.jpg"><p>鼠类</p></li>
+                	<li><img src="image/1.jpg"><p>蚊类</p></li>
+					<li><img src="image/4.jpg"><p>蟑螂</p></li>
+					<li><img src="image/7.jpg"><p>蝇类</p></li>
+                    <li><img src="image/5.jpg"><p>虫类</p></li>
+                </ul>
+            </div>
+			<script type="text/javascript">
+				$("#ant").click(function(){		 
+				  $(".content_box02").load("knowledge/baiyi.html");
+				});
+				$("#mouse").click(function(){		 
+				  $(".content_box02").load("knowledge/shu.html");
+				});
+				$("#zhang").click(function(){		 
+				  $(".content_box02").load("knowledge/zhanglang.html");
+				});
+				$("#fly").click(function(){		 
+				  $(".content_box02").load("knowledge/cangying.html");
+				});
+				$("#mouse_l").click(function(){		 
+				  $(".content_box02").load("knowledge/mieshu.html");
+				});
+				$("#chong").click(function(){		 
+				  $(".content_box02").load("knowledge/chou.html");
+				});
+			</script>
+		</div>
     </div>
-	<script type="text/javascript">
-			$("#ant").click(function(){		 
-			  $("#fangzhi").load("fangzhi/antfang.html");
-			});
-			$("#mouse").click(function(){		 
-			  $("#fangzhi").load("fangzhi/mousefang.html");
-			});
-			$("#chong").click(function(){		 
-			  $("#fangzhi").load("fangzhi/flyfang.html");
-			});
-			$("#fly").click(function(){		 
-			  $("#fangzhi").load("fangzhi/flyfang.html");
-			});
-    </script>
+	
     <!--底部-->
     <div class="foot"></div>
 	<script type="text/javascript">	 
